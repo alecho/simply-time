@@ -1,0 +1,5 @@
+{{timer-counter isRunning=isRunning}}
+<div {{action "toggleRunning"}}>
+  {{if isRunning "Stop" "Start"}}
+</div>
+{{yield}}
