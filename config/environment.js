@@ -8,7 +8,7 @@ module.exports = function(environment) {
     firebase: 'https://simply-time.firebaseio.com/',
     torii: {
       sessionServiceName: 'session'
-    }
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
