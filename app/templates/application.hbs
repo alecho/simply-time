@@ -1,8 +1,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <a class="navbar-brand" href="#">Simply Time</a>
+  {{#link-to "application" class="navbar-brand"}}Simply Time{{/link-to}}
   <ul class="nav nav-pills">
-    <li class="nav-item active">
-      {{#link-to "clients"}}Clients{{/link-to}}
+    <li class="nav-item">
+      {{#link-to "clients" class="nav-link"}}Clients{{/link-to}}
     </li>
   </ul>
   {{#if session.isAuthenticated}}
@@ -15,7 +15,5 @@
 </nav>
 
 <div class="container">
-{{#timer-control}}
-{{/timer-control}}
   {{outlet}}
 </div>
